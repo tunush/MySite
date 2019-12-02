@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { ContactComponent } from './contact/contact.component';
+
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,12 @@ import { AdvantagesComponent } from './advantages/advantages.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    AdvantagesComponent
+    AdvantagesComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

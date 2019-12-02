@@ -1,0 +1,24 @@
+#contact {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+button {
+    font-size: 18px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    width: 15%;
+    text-align: left;
+}
+
+.columns {
+    margin-left: auto;
+    margin-right: auto;
+}
