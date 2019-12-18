@@ -1,4 +1,153 @@
+input.ng-touched.ng-invalid {border:solid darkred 2px !important;}
+/* input.ng-touched.ng-valid {border:solid green 2px !important;} */
+
+.formItem {
+    margin-bottom: 22px;
+}
+
+.responsive-headline {
+    font-size: 57.2px !important;
+}
+
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.row .eight {
+    width: 100%;
+}
+
+.column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+}
+
+#contact .ten {
+	margin: 0 auto;
+	float: none;
+}
+
 #contact {
+   background: #191919;
+   padding-top: 96px;
+   padding-bottom: 102px;
+   color: #636363;
+}
+#contact .section-head { margin-bottom: 42px; }
+
+#contact a, #contact a:visited  { color: #11ABB0; }
+#contact a:hover, #contact a:focus { color: #fff; }
+
+#contact h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+#contact h1 span { display: none; }
+#contact h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0e0";
+   padding-left: 48px;
+   padding-right: 15px;
+   font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #ebeeee;
+   margin-top: -23px;
+}
+
+#contact h4 {
+   font: 16px/24px 'opensans-bold', sans-serif;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+#contact p.lead {
+   font: 18px/36px 'opensans-light', sans-serif;
+   padding-right: 3%;
+}
+#contact .header-col { padding-top: 6px; }
+
+/* contact form */
+#contact form { margin-bottom: 30px; }
+#contact label {
+    font: 15px/24px 'opensans-bold', sans-serif;
+    margin: 12px 0;
+    color: #EBEEEE;
+    display: inline-block;
+    float: left;
+    width: 15%;
+}
+#contact input,
+#contact textarea,
+#contact select {
+    padding: 18px 20px;
+	color: #eee;
+	background: #373233;
+	border: 0;
+	outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 85%;
+    margin-bottom: 22px;
+}
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
+	color: #fff;
+	background-color: #11ABB0;
+}
+#contact .submit {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color:#fff;
+    background: #0D0D0D;
+	border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+	border-radius: 3px;
+    float: right;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+}
+#contact .submit:hover {
+	color: #0D0D0D;
+	background: #fff;
+}
+#contact .submit[disabled] {
+    cursor: default;
+}
+#contact span.required {
+	color: #11ABB0;
+	font-size: 13px;
+}
+#message-warning, #message-success {
+   display: none;
+	background: #0F0F0F;
+	padding: 24px 24px;
+	margin-bottom: 36px;
+   width: 65%;
+   margin-left: 26%;
+}
+#message-warning { color: #D72828; }
+#message-success { color: #11ABB0;}
+
+#message-warning i,
+#message-success i {
+   margin-right: 10px;
+}
+
+
+
+
+/* #contact {
     padding-top: 95px;
     padding-bottom: 95px;
 }
@@ -21,4 +170,4 @@ button {
 .columns {
     margin-left: auto;
     margin-right: auto;
-}
+} */

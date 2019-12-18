@@ -1,0 +1,204 @@
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.row .three {
+    width: 25%;
+}
+
+.row .nine {
+    width: 75%;
+}
+
+.row .item {
+    margin-bottom: 40px !important;
+}
+
+.row .row {
+    width: auto;
+    max-width: none;
+    margin: 0 -20px;
+}
+
+.column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+}
+
+.twelve p, ul {
+    color: #838C95;
+}
+
+#resume {
+    background: #fff;
+    padding-top: 90px;
+    /*padding-bottom: 72px;*/
+    overflow: hidden;
+ }
+ 
+ #resume a, #resume a:visited  { color: #11ABB0; }
+ #resume a:hover, #resume a:focus { color: #313131; }
+ 
+ #resume h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ #resume h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+ }
+ #resume h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+ }
+ 
+ #resume .header-col { padding-top: 9px; }
+ /* #resume .main-col { padding-right: 10%; } */
+ 
+ .education, .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+ }
+ #resume .info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ #resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ #resume .date {
+    font: 15px/24px 'opensans-regular', sans-serif;
+    margin-top: 6px;
+ }
+ 
+ /*----------------------------------------------*/
+ /*	Skill Bars
+ /*----------------------------------------------*/
+ 
+ .bars {
+     width: 95%;
+     float: left;
+     padding: 0;
+     text-align: left;
+ }
+ .bars .skills {
+       margin-top: 36px;
+    list-style: none;
+ }
+ .bars li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+ }
+ .bars li em {
+    font: 15px 'opensans-bold', sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+ }
+ .bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+ 
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 3px 0 0 3px;
+ }
+ 
+ .php {
+       width: 70%;
+ }
+ .c {
+       width: 40%;
+ }
+ .wordpress {
+       width: 65%;
+ }
+ .css {
+       width: 80%;
+ }
+ .html {
+       width: 80%;
+ }
+ .javascripts {
+       width: 60%;
+ }
+ .git {
+       width: 80%;
+ }
+/*  
+ @-moz-keyframes php {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+ @-moz-keyframes c {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+ @-moz-keyframes wordpress {
+   0%   { width: 0px;  }
+   100% { width: 65%;  }
+ }
+ @-moz-keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @-moz-keyframes html {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @-moz-keyframes javascripts {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @-moz-keyframes git {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ 
+ @-webkit-keyframes php {
+   0%   { width: 0px;  }
+   100% { width: 70%;  }
+ }
+ @-webkit-keyframes c {
+   0%   { width: 0px;  }
+   100% { width: 40%;  }
+ }
+ @-webkit-keyframes wordpress {
+   0%   { width: 0px;  }
+   100% { width: 65%;  }
+ }
+ @-webkit-keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @-webkit-keyframes html {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @-webkit-keyframes javascripts {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @-webkit-keyframes git {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ } */

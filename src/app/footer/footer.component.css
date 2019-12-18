@@ -1,38 +1,99 @@
-footer {
-    padding-top: 50px;
-    background: linear-gradient(45deg, #29116d, #5c4789);
-    color: white;
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
-a {
-    color: white;
-}
-
-.nav-list li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.social-container {
-    margin-top: 25px;
-}
-
-.social-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.row .twelve {
     width: 100%;
-    padding: 23px;
-    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    text-transform: uppercase;
-    color:white;
 }
-.social-container .col {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+
+.column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
 }
+
+footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    background-color: #0f0f0f;
+ }
+ 
+ footer a, footer a:visited { color: #525252; }
+ footer a:hover, footer a:focus { color: #fff; }
+ 
+ /* copyright */
+ footer .copyright {
+    margin: 0;
+    padding: 0;
+ }
+ footer .copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+ }
+ .ie footer .copyright li {
+    display: inline;
+ }
+ footer .copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #095153;
+ }
+ footer .copyright  li:first-child:before {
+    display: none;
+ }
+ 
+ /* social links */
+ footer .social-links {
+    margin: 18px 0 30px 0;
+    padding: 0;
+    font-size: 30px;
+ }
+ footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+ }
+ 
+ footer .social-links li:first-child { margin-left: 0; }
+ 
+ /* Go To Top Button */
+ #go-top {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -30px;
+ }
+
+ #go-top i {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+ }
+
+ #go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #525252;
+    transition: all 0.2s ease-in-out;
+ 
+    color: #fff;
+    font-size: 21px;
+    line-height: 60px;
+    border-radius: 100%;
+ }
+ #go-top a:hover { background-color: #0F9095; }
