@@ -17,17 +17,27 @@
                 <fieldset>
 
                     <div class="formItem">
-                        <label for="contactName"><strong>Name <span class="required">*</span></strong></label>
+                        <label for="contactName"><strong>Full Name <span class="required">*</span></strong></label>
                         <input type="text" size="35" id="contactName" formControlName="userName" name="contactName">
 
                         <div class="alert alert-danger"
                             *ngIf="myForm.controls['userName'].errors?.required && myForm.controls['userName'].touched">
                             Name is not specified
                         </div>
+                    </div>
+
+                    <div class="formItem">
+                        <label for="contactName"><strong>Nikname <span class="required">*</span></strong></label>
+                        <input type="text" size="35" id="contactName" formControlName="userNickname" name="contactName">
 
                         <div class="alert alert-danger"
-                            *ngIf="myForm.controls['userName'].errors?.isCorrectName">
-                            This name already exist
+                            *ngIf="myForm.controls['userNickname'].errors?.required && myForm.controls['userNickname'].touched">
+                            Nickname is not specified
+                        </div>
+
+                        <div class="alert alert-danger"
+                            *ngIf="myForm.controls['userNickname'].errors?.isCorrectNickname">
+                            This nickname already exist
                         </div>
                     </div>
 
@@ -39,7 +49,6 @@
                             *ngIf="myForm.controls['userEmail'].invalid && myForm.controls['userEmail'].touched">
                             Email is not specified or incorrect
                         </div>
-
                     </div>
 
                     <div class="formItem">
@@ -52,12 +61,12 @@
                         <textarea formControlName="message" cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                         
                         <div class="alert alert-danger"
-                            *ngIf="myForm.controls['message'].errors.required && myForm.controls['message'].touched">
+                            *ngIf="myForm.controls['message'].errors?.required && myForm.controls['message'].touched">
                             This field is not filled in
                         </div>
 
                         <div class="alert alert-danger"
-                            *ngIf="myForm.controls['message'].errors.lengthMessage && myForm.controls['message'].touched">
+                            *ngIf="myForm.controls['message'].errors?.lengthMessage && myForm.controls['message'].touched">
                             The message must be at least 8 characters long
                         </div>
                     </div>

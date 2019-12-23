@@ -59,11 +59,17 @@
  #resume .header-col { padding-top: 9px; }
  /* #resume .main-col { padding-right: 10%; } */
  
- .education, .work {
+ .education, .work, .skill {
     margin-bottom: 48px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E8E8E8;
  }
+
+ .addEducation {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+ }
+
  #resume .info {
     font: 16px/24px 'librebaskerville-italic', serif;
     color: #6E7881;
@@ -84,14 +90,15 @@
  /*----------------------------------------------*/
  
  .bars {
-     width: 95%;
-     float: left;
-     padding: 0;
-     text-align: left;
+    width: 100%;
+    float: left;
+    padding: 0;
+    text-align: left;
  }
  .bars .skills {
-       margin-top: 36px;
+    margin-top: 36px;
     list-style: none;
+    padding-left: 0;
  }
  .bars li {
     position: relative;

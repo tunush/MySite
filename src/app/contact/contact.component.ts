@@ -8,8 +8,8 @@ import { NgForm, FormGroup, FormBuilder, FormControl, Validators} from '@angular
 })
 export class ContactComponent {
   myForm : FormGroup = new FormGroup({
-             
-    "userName": new FormControl("", [Validators.required], [this.checkName]),
+    "userName": new FormControl("", [Validators.required]),
+    "userNickname" : new FormControl("", [Validators.required], [this.checkNickname]),
     "userEmail": new FormControl("", [
                 Validators.required, 
                 Validators.email
@@ -22,24 +22,25 @@ export class ContactComponent {
 
   onSubmit() {
     console.log(this.myForm);
+    this.myForm.reset();
   }
 
   checkLengthMessage(control: FormControl) {
-    let lengthMessage;
     if (control.value.length <= 8) {
       return {lengthMessage : true};
     }
-    return {lengthMessage : null};
+    return null;
   }
 
-  checkName(control: FormControl) {
-    let isCorrectName;
+  checkNickname(control: FormControl) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (control.value == "Tatevik") {
-            resolve({isCorrectName:true});
+        if (control.value == "nick") {
+            resolve({isCorrectNickname:true});
         }
-        resolve({isCorrectName:null});
+        else {
+          resolve(null);
+        }
       }, 3000);
     });
   }

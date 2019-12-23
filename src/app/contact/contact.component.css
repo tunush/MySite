@@ -1,4 +1,4 @@
-input.ng-touched.ng-invalid {border:solid darkred 2px !important;}
+input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {border:solid darkred 2px !important;}
 /* input.ng-touched.ng-valid {border:solid green 2px !important;} */
 
 .formItem {

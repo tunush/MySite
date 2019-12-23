@@ -124,6 +124,7 @@ ul#nav li {
    list-style: none;
    height: 48px;
    display: inline-block;
+   width: 150px;
 }
 
 /* Links */
